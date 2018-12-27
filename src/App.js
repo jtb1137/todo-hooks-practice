@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Form from "./Form";
+import Clicks from "./Clicks";
 
 export default () => {
   const [todos, setTodos] = useState([]);
@@ -34,6 +35,7 @@ export default () => {
         ))}
       </div>
       <button onClick={() => setTodos([])}>Reset</button>
+      <Clicks />
     </div>
   );
 };
